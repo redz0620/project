@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>bootstrap intro</title>
+  </head>
+  <body>
+                        <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Voltage</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <p id="about"><a class="nav-link" href="/products.html">Products</a></p>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Clarks</a></li>
+                  <li><a class="dropdown-item" href="#">Nike</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="#">Vionic</a></li>
+                  <li><a class="dropdown-item" href="#">Zara</a></li>
+                  <li><a class="dropdown-item" href="#">Crocs</a></li>
+                  <li><a class="dropdown-item" href="#">Birkenstock</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dashboard
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Shopcart</a></li>
+                  <li><a class="dropdown-item" href="#">Transaction</a></li>
+                  <li><a class="dropdown-item" href="#">SignOut</a></li>
+                  <li><a class="dropdown-item" href="#">SignIn</a></li>
+                  <li><a class="dropdown-item" href="#">SignUp</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                  <p><a class="nav-link" href="#contact">Contact</a><p>
+              </li> -->
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+      <!-- header done -->
+      <!-- content -->
+      <div class="container my-5">
+        <h1 class="cap">Checkout</h1>
+        <div class="row p-4 justify-content-center">
+          <div class="col-10 col-sm-10 col-md-10 col-lg-6 col-xl-6 mb-5">
+            <h4 class="check-title mb-3">order summary</h4>
+            <div class="table-responsive table-box">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">image</th>
+                  <th scope="col">price</th>
+                  <th scope="col">quantity</th>
+                  <th scope="col">update</th>
+                  <th scope="col">amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="/img/GOOD0000.jpg" style="width: 60px;" class="rounded-circle"></td>
+                  <td>200</td>
+                  <td>1</td>
+                  <td><input type="number" min="1" value="1" max="100" style="width: 50px;"></td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  <td><img src="/img/GOOD00.jpg" style="width: 60px;" class="rounded-circle"></td>
+                  <td>500</td>
+                  <td>2</td>
+                  <td><input type="number" min="1" value="1" max="100" style="width: 50px;"></td>
+                  <td>1,000</td>
+                </tr>
+                <tr>
+                  <td><img src="/img/GOOD.....jpg" style="width: 60px;" class="rounded-pill"></td>
+                  <td>300</td>
+                  <td>1</td>
+                  <td><input type="number" min="1" value="1" max="100" style="width: 50px;"></td>
+                  <td>230</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table mb-5">
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>total:</td>
+                </tr>
+              </tbody>
+            </table>
+           </div>
+          </div>
+          <div class="col-10 col-sm-10 col-md-10 col-lg-6 col-xl-6">
+            <h4 class="check-title mb-3">delivery address</h4>
+            <div class="form-box px-lg-5">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="exampleInputText1">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputText1" class="form-label">Last Name</label>
+                  <input type="pa" class="form-control" id="exampleInputText1">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputText1" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailhelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputText1" class="form-label">Phone</label>
+                  <input type="text" class="form-control" id="exampleInputText1">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputText1" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="exampleInputText1">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputText1" class="form-label">State</label>
+                  <input type="text" class="form-control" id="exampleInputText1">
+                </div>
+                <!-- <button type="submit" class="btn btn-danger">place order</button> -->
+                <a href="/callback.html" type="submit" class="btn btn-danger w-50">Place Order</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- FOOTER  -->
+  <div class="foota bg-dark">
+      <div class="container text-center text-white text-capitalize">
+        <div class="row justify-content-around footer1 pt-5 pb-5">
+          <div class="col-9 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <h1 class="mt-4 mb-4">voltage</h1>
+            <h3 class="mt-3 mb-2">high quality classys</h3>
+            <h3>shoes that suit you.....</h3>
+          </div>
+          <div class="col-9 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <h2 class="mt-4 mb-4">call us</h2>
+            <h4 class="mt-3 mb-2"> <span><i class="fas fa-mobile-android-alt"></i></span> 08046783241</h4>
+            <h4> <span><i class="fas fa-phone-square"></i></span> +234-01-4321567</h4>
+          </div>
+          <div class="col-9 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <h1  class="mt-4 mb-4">useful links</h1>
+            <ul class="list-unstyled">
+              <li class="mb-1"><a href="#">Home</a></li>
+              <li class="mb-1"><a href="#">gallery</a></li>
+              <li class="mb-1"><a href="#">About</a></li>
+              <li class="mb-1"><a href="#">contact</a></li>
+              <li class="mb-1"><a href="#">our Team</a></li>
+            </ul>
+          </div>
+          <div class="col-9 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+            <h2 class="mt-4 mb-4">our handles</h2>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      <div class="foota2 pt-5 pb-5 border-top">
+        <h4 class="mb-2 text-warning">copyright 2022 &copy; | all rights reserved.</h4>
+        <h5><a href="#">crafred By: MattDevPro </a></h5>
+      </div>
+    </div>
+  </div>
+
+       <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
